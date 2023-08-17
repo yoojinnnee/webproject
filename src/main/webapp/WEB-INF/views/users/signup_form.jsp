@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="container">
-		<h1>회원 가입 폼 입니다.</h1>
+		<h1>회원 가입</h1>
 		<form action="${pageContext.request.contextPath}/users/signup" method="post" id="myForm">
 			<div>
 				<label class="control-label" for="id">아이디</label>

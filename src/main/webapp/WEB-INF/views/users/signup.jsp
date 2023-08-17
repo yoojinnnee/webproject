@@ -11,8 +11,8 @@
 	<div class="container">
 		
 		<p> <!-- form 전송 되었던 파라미터를 view page 에서 당연히 사용할수 있음 -->
-			<strong>${param.id }</strong> 회원님 가입 되었습니다.
-			<a href="${pageContext.request.contextPath}/users/loginform">로그인 하러가기</a>
+			<strong>${param.id }</strong> 회원님 가입 성공
+			<a href="${pageContext.request.contextPath}/users/loginform">로그인 하기</a>
 		</p>
 		
 	</div>	

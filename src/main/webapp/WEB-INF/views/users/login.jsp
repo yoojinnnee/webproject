@@ -9,11 +9,10 @@
 </head>
 <body>
 	<div class="container">
-		<h1>알림</h1>
 		<c:choose>
 			<c:when test="${not empty sessionScope.id }">
 				<p>
-					<strong>${sessionScope.id }</strong>님 로그인 되었습니다.
+					<strong>${sessionScope.id }</strong>님 로그인 성공
 					<a href="${requestScope.url }">확인</a>
 				</p>
 			</c:when>

@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="container">
-		<h3>파일 업로드 폼 입니다.</h3>
+		<h3>파일 업로드</h3>
 		<form action="upload" method="post" enctype="multipart/form-data">
 			<div>
 				<label for="title">제목</label>

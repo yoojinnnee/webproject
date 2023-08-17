@@ -96,20 +96,30 @@
 			transform: rotate(360deg);
 		}
 	}
+
 </style>
 </head>
 </head>
 <body>
 	<div class="container">
-		
+
 		<%-- 만일 이전 글(더 옛날글)의 글번호가 0 가 아니라면(이전 글이 존재 한다면) --%>
 		<c:if test="${dto.prevNum ne 0}">
-			<a href="detail?num=${dto.prevNum }&condition=${condition}&keyword=${encodedK}">이전 글</a>
+			<p style="margin-top: 15px; margin-bottom: 15px; text-align: right">
+				<a href="detail?num=${dto.prevNum }&condition=${condition}&keyword=${encodedK}">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-square-fill" viewBox="0 0 16 16">
+						<path d="M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1z"/>
+					</svg>
+				</a>
 		</c:if>
-		
 		<%-- 만일 다음 글(더 최신글)의 글번호가 0 가 아니라면(다음 글이 존재 한다면) --%>
 		<c:if test="${dto.nextNum ne 0 }">
-			<a href="detail?num=${dto.nextNum }&condition=${condition}&keyword=${encodedK}">다음 글</a>
+			<a href="detail?num=${dto.nextNum }&condition=${condition}&keyword=${encodedK}">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+					<path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+				</svg>
+			</a>
+			</p>
 		</c:if>
 		
 		<%-- 만일 검색 키워드가 있다면 --%>
@@ -119,7 +129,7 @@
 				<strong>${keyword }</strong> 검색어로 검색된 내용 자세히 보기
 			</p>
 		</c:if>
-		<h3>글 상세 보기</h3>
+
 		<table class="table table-bordered animate__animated animate__bounceInDown">
 			<tr>
 				<th>글번호</th>
@@ -161,7 +171,7 @@
 			</script>
 		</c:if>
 		
-		<h4>댓글을 입력해 주세요</h4>
+		<h4>댓글 작성</h4>
 		<!-- 원글에 댓글을 작성할 폼 -->
 		<form class="comment-form insert-form" action="comment_insert" method="post">
 			<!-- 원글의 글번호가 댓글의 ref_group 번호가 된다. -->

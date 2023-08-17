@@ -21,7 +21,7 @@
 </head>
 <body>
 	<div class="container">
-		<h3>회원 가입 수정 폼 입니다.</h3>
+		<h3>회원 가입 수정</h3>
 		
 		<a id="profileLink" href="javascript:">
 			<c:choose>

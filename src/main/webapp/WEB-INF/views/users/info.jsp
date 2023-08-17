@@ -18,7 +18,7 @@
 </head>
 <body>
 <div class="container">
-	<h1>가입 정보 입니다.</h1>
+	<h1>회원 정보</h1>
 	<table>
 		<tr>
 			<th>아이디</th>
@@ -54,12 +54,12 @@
 			<td>${dto.regdate }</td>
 		</tr>
 	</table>
-	<a href="${pageContext.request.contextPath}/users/updateform">개인정보 수정</a>
+	<a href="${pageContext.request.contextPath}/users/updateform">개인 정보 수정</a>
 	<a href="javascript:deleteConfirm()">탈퇴</a>
 </div>
 <script>
 	function deleteConfirm(){
-		const isDelete=confirm("${id} 님 탈퇴 하시겠습니까?");
+		const isDelete=confirm("${id} 님 탈퇴하시겠습니까?");
 		if(isDelete){
 			location.href="${pageContext.request.contextPath}/users/delete";
 		}
