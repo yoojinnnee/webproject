@@ -9,7 +9,7 @@
 </head>
 <body>
 	<script>
-		alert("로그 아웃 성공");
+		alert("로그 아웃");
 		location.href="${pageContext.request.contextPath}/";
 	</script>
 </body>

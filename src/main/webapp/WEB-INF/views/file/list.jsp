@@ -12,7 +12,7 @@
 <body>
 	<div class="container">
 		<a href="${pageContext.request.contextPath }/file/upload_form">업로드 하기</a>
-		<h3>자료실 목록 보기</h3>
+		<h3>자료실 목록</h3>
 		<table class="table table-striped">
 			<thead class="table-dark">
 				<tr>
